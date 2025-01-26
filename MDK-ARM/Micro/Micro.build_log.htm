@@ -1,0 +1,110 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Amirmohammad Salek, IUST, LIC=9N0AE-50P3Q-5B3EB-2DQ53-WJZC6-2P6QA
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.36.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+C:\Users\ASA\Desktop\Micro\MDK-ARM\Micro.uvprojx
+Project File Date:  01/26/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Micro'
+compiling main.c...
+../Core/Src/main.c(65): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,GPIO_PIN_0,temp[0]);  
+../Core/Src/main.c(66): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,GPIO_PIN_1,temp[1]);
+../Core/Src/main.c(67): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,GPIO_PIN_2,temp[2]);
+../Core/Src/main.c(68): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(GPIOA,GPIO_PIN_3,temp[3]);
+../Core/Src/main.c(157): warning:  #223-D: function "strncmp" declared implicitly
+          if (strncmp((uint8_t *)buff1, "Report ",7) == 0) {
+../Core/Src/main.c(158): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+  					sprintf(buff1,"Temp is : %.1f \r\n",temp);
+../Core/Src/main.c(177): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+  	sprintf(buff1,"Max : %d",max);
+../Core/Src/main.c(180): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+  	sprintf(buff1,"Min : %d",min);
+../Core/Src/main.c(190): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+  				sprintf(buff1,"Max : %d",max);
+../Core/Src/main.c(198): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+  						sprintf(buff1,"Max : %d",max);
+../Core/Src/main.c(206): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+  						sprintf(buff1,"Max : %d",max);
+../Core/Src/main.c(223): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+  				sprintf(buff1,"Min : %d",min);
+../Core/Src/main.c(231): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+  						sprintf(buff1,"Min : %d",min);
+../Core/Src/main.c(239): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+  						sprintf(buff1,"Min : %d",min);
+../Core/Src/main.c(259): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,1);
+../Core/Src/main.c(262): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+  					sprintf(buff1,"Temp is : %.1f",temp);
+../Core/Src/main.c(268): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,0);
+../Core/Src/main.c(273): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+  					sprintf(buff1,"Temp is : %.1f",temp);
+../Core/Src/main.c(276): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+  						sprintf(buff1,"WARNING!!!\r\nTemp is too low\r\n");
+../Core/Src/main.c(277): warning:  #223-D: function "strlen" declared implicitly
+  						HAL_UART_Transmit(&huart1, (uint8_t *)buff1, strlen(buff1), HAL_MAX_DELAY);
+../Core/Src/main.c(283): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,0);
+../Core/Src/main.c(288): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+  					sprintf(buff1,"Temp is : %.1f",temp);
+../Core/Src/main.c(291): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+  						sprintf(buff1,"WARNING!!!\r\nTemp is too high\r\n");
+../Core/Src/main.c(292): warning:  #223-D: function "strlen" declared implicitly
+  						HAL_UART_Transmit(&huart1, (uint8_t *)buff1, strlen(buff1), HAL_MAX_DELAY);
+../Core/Src/main.c: 24 warnings, 0 errors
+linking...
+Program Size: Code=15874 RO-data=486 RW-data=28 ZI-data=1852  
+FromELF: creating hex file...
+"Micro\Micro.axf" - 0 Error(s), 24 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.1.1.0.pack
+                Keil.STM32F1xx_DFP.1.1.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Micro
+  C:\Users\ASA\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include
+  C:\Users\ASA\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\1.1.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+      Include file:  CMSIS\Core\Include\tz_context.h
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
